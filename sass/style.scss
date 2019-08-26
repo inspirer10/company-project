@@ -1,0 +1,634 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    scroll-behavior: smooth;
+}
+
+header {
+    background: #313234;
+    height: 50px;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header>nav ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    float: right;
+}
+
+header>nav ul>li>a {
+    line-height: 50px;
+    padding: 0 20px;
+    display: block;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+header>nav ul>li>a:hover {
+    background: #ccc;
+    color: #00BADF;
+}
+
+header>nav li {
+    display: inline-block;
+}
+
+header>nav img {
+    padding: 10px 0;
+}
+
+.hero {
+    background: url(https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-0.3.5&s=bbd3f4a55de814f1b93b80669674cc17&auto=format&fit=crop&w=1350&q=80);
+    background-size: cover;
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.slogan {
+    max-width: 800px;
+    height: 35%;
+    padding: 25px 210px 25px 40px;
+    background-color: rgba(27, 24, 22, 0.5);
+    color: white;
+    margin-top: 60px;
+    font-size: 18px;
+}
+
+h1 {
+    font-weight: normal;
+    text-align: left;
+}
+
+p {
+    margin: 15px auto 50px;
+    text-align: center;
+    color: gray;
+}
+
+h3 {
+    margin: 15px auto 5px;
+    text-align: center;
+    color: #002A2F;
+}
+
+.icon .fas {
+    padding: 20px;
+    font-size: 80px;
+    height: 120px;
+    width: 140px;
+    text-align: center;
+    background: grey;
+    border-radius: 15px;
+    color: white;
+}
+
+h2 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 50px;
+    color: #2E302F;
+}
+
+.row::before,
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.icn {
+    margin-top: 45px;
+    padding-bottom: 420px;
+}
+
+.rtv {
+    padding-bottom: 15px;
+}
+
+.icons {
+    margin-top: 5%;
+}
+
+.icons .col-m-4:hover i {
+    background: #00C7E6;
+    transition: ease-in-out .3s;
+}
+
+.icons .col-m-4:hover h3 {
+    color: #00C7E6;
+    transition: ease-in-out .3s;
+}
+
+.icon {
+    text-align: center;
+}
+
+.gallery img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.gallery [class*='col-'] {
+    padding: 0;
+    position: relative;
+}
+
+.layer {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    height: 100%;
+    display: none;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+}
+
+.layer i {
+    font-size: 25px;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+[class*="col-"] {
+    float: left;
+    min-height: 1px;
+    padding: 15px;
+    width: 100%;
+}
+
+.image {
+    height: 200px;
+    overflow: hidden;
+}
+
+.image:hover img {
+    transform: scale(1.2);
+    transition: 1.5s;
+}
+
+.TEST {
+    display: none;
+}
+
+.image:hover .layer {
+    display: block;
+}
+
+.image .fa-search {
+    right: 58%;
+}
+
+.image .fa-camera-retro {
+    left: 58%;
+}
+
+.team {
+    margin-top: 5%;
+}
+
+.team p {
+    top: 35%;
+    display: none;
+    width: 100%;
+    position: absolute;
+}
+
+.team img:hover p {
+    display: block;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: .4s;
+    color: white;
+}
+
+.ipad {
+    margin-top: 50px;
+    background: lightgray;
+}
+
+.ipad h2 {
+    text-align: center;
+    font-size: 50px;
+    color: white;
+}
+
+.ipad img {
+    height: 400px;
+    width: 270px;
+    margin-top: 10%;
+    border-radius: 20px;
+}
+
+.numbers {
+    text-align: center;
+    font-weight: bold;
+}
+
+.numbers p {
+    color: #7DDFEF;
+    font-size: 23px;
+}
+
+.numbers h1 {
+    text-align: center;
+    font-size: 80px;
+    font-weight: bold;
+    margin: 20px auto;
+    font-family: 'Passion One', cursive;
+    color: #313332;
+}
+
+.final {
+    background: #313332;
+    color: white;
+}
+
+.final h1 {
+    font-weight: bold;
+}
+
+.final p {
+    color: white;
+    text-align: left;
+}
+
+.final h3 {
+    color: white;
+    text-align: left;
+    font-weight: normal;
+}
+
+footer {
+    background: #252726;
+}
+
+footer p {
+    color: white;
+    text-align: center;
+    margin: 10px;
+}
+
+.person,
+.bill,
+.stef,
+.mar,
+.dex {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    margin: auto;
+    position: relative;
+    background-size: cover;
+}
+
+.bill {
+    background-image: url(https://thumb1.shutterstock.com/mosaic_250/345733/562247020/stock-photo-portrait-of-happy-man-smiling-outdoors-during-cold-winter-day-562247020.jpg);
+}
+
+.stef {
+    background-image: url(https://thumb1.shutterstock.com/mosaic_250/1849259/575234476/stock-photo-good-looking-man-in-glasses-portrait-575234476.jpg);
+    background-position: center;
+}
+
+.mar {
+    background-image: url(https://thumb1.shutterstock.com/mosaic_250/2936380/640005220/stock-photo-indoor-portrait-of-beautiful-brunette-young-dark-skinned-woman-with-shaggy-hairstyle-smiling-640005220.jpg);
+    background-position: center;
+}
+
+.dex {
+    background-image: url(https://thumbs.dreamstime.com/t/business-professional-outdoors-portraits-college-student-photographed-outside-natural-light-to-create-portrait-30857183.jpg);
+    background-position: center;
+}
+
+.people:hover p {
+    color: white;
+    cursor: pointer;
+    display: inline;
+    font-size: 25px;
+}
+
+.side {
+    text-align: left;
+}
+
+.media {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.social {
+    color: white;
+    background: #00C7E6;
+    width: 50px;
+    height: 50px;
+    font-size: 35px;
+    text-align: center;
+    padding-top: 8px;
+    cursor: pointer;
+    transition: .3s;
+    margin: 5px 5px;
+}
+
+.social:hover {
+    background: yellow;
+    border-radius: 50%;
+    color: black;
+}
+
+.test {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: none;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    border-radius: 50%;
+}
+
+.people:hover .test {
+    display: inline;
+}
+
+.people:hover {
+    transform: scale(1.1);
+    transition: .3s;
+}
+
+.people:hover h3 {
+    font-size: 35px;
+}
+
+.col-offset-0 {
+    margin-left: 0;
+}
+
+.col-offset-1 {
+    margin-left: 8.33%;
+}
+
+.col-offset-2 {
+    margin-left: 16.66%;
+}
+
+.col-offset-3 {
+    margin-left: 25%;
+}
+
+.col-offset-4 {
+    margin-left: 33.33%;
+}
+
+.col-offset-5 {
+    margin-left: 41.66%;
+}
+
+.col-offset-6 {
+    margin-left: 50%;
+}
+
+.col-offset-7 {
+    margin-left: 58.33%;
+}
+
+.col-offset-8 {
+    margin-left: 66.66%;
+}
+
+.col-offset-9 {
+    margin-left: 75%;
+}
+
+.col-offset-10 {
+    margin-left: 83.33%;
+}
+
+.col-offset-11 {
+    margin-left: 91.66%;
+}
+
+@media (max-width: 767px) {
+    .col-s-1 {
+        width: 8.33%;
+    }
+
+    .col-s-2 {
+        width: 16.66%;
+    }
+
+    .col-s-3 {
+        width: 25%;
+    }
+
+    .col-s-4 {
+        width: 33.33%;
+    }
+
+    .col-s-5 {
+        width: 41.66%;
+    }
+
+    .col-s-6 {
+        width: 50%;
+    }
+
+    .col-s-7 {
+        width: 58.33%;
+    }
+
+    .col-s-8 {
+        width: 66.66%;
+    }
+
+    .col-s-9 {
+        width: 75%;
+    }
+
+    .col-s-10 {
+        width: 83.33%;
+    }
+
+    .col-s-11 {
+        width: 91.66%;
+    }
+
+    .col-s-12 {
+        width: 100%;
+    }
+
+    header {
+        height: auto;
+    }
+
+    header nav ul {
+        float: none;
+        text-align: center;
+    }
+
+    header nav img {
+        display: block;
+        margin: 0 auto;
+        padding-top: 5%;
+    }
+
+    header nav li {
+        display: block;
+        font-size: 30px;
+        padding: 15px;
+    }
+
+    header>nav ul>li>a:hover {
+        color: yellow;
+        background: #313234;
+    }
+
+    .hero {
+        width: 100vw;
+        height: 50vh;
+    }
+
+    .slogan {
+        padding: 10px 40px 10px 40px;
+        background-color: rgba(27, 24, 22, 0.6);
+        font-size: 19px;
+        height: 70%;
+    }
+
+    .side {
+        text-align: center;
+        font-size: 18px;
+    }
+
+    .para {
+        margin: 20px 10% 50px;
+        font-size: 20px;
+    }
+
+    .numbers p {
+        font-size: 30px;
+        margin: 0 auto 30px;
+    }
+
+    .final h1,
+    .final p {
+        text-align: center;
+    }
+
+    h3 {
+        font-size: 30px;
+        margin-bottom: 50px;
+    }
+
+    .rtv p {
+        font-size: 20px;
+    }
+
+    .ipad img {
+        width: 79%;
+        height: 100%;
+        padding-left: 20%;
+    }
+
+    .layer {
+        color: yellow;
+        display: contents;
+    }
+
+    .layer i {
+        font-size: 40px;
+        padding: 5%;
+    }
+
+    .image {
+        height: 250px;
+
+    }
+
+    .image:first-child {
+        margin-top: 0%;
+    }
+
+    .gallery {
+        background: grey;
+    }
+
+    .social {
+        width: 60px;
+        height: 60px;
+        font-size: 40px;
+        margin: 15px;
+        background: yellow;
+        color: black;
+        border-radius: 50%;
+    }
+
+    .media {
+        text-align: center;
+    }
+}
+
+@media (min-width: 768px) {
+    .col-m-1 {
+        width: 8.33%;
+    }
+
+    .col-m-2 {
+        width: 16.66%;
+    }
+
+    .col-m-3 {
+        width: 25%;
+    }
+
+    .col-m-4 {
+        width: 33.33%;
+    }
+
+    .col-m-5 {
+        width: 41.66%;
+    }
+
+    .col-m-6 {
+        width: 50%;
+    }
+
+    .col-m-7 {
+        width: 58.33%;
+    }
+
+    .col-m-8 {
+        width: 66.66%;
+    }
+
+    .col-m-9 {
+        width: 75%;
+    }
+
+    .col-m-10 {
+        width: 83.33%;
+    }
+
+    .col-m-11 {
+        width: 91.66%;
+    }
+
+    .col-m-12 {
+        width: 100%;
+    }
+}
