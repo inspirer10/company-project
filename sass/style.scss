@@ -2,10 +2,13 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     font-family: 'Open Sans', sans-serif;
-    scroll-behavior: smooth;
 }
 
 header {
@@ -24,6 +27,7 @@ header>nav ul {
     padding: 0;
     list-style-type: none;
     float: right;
+    display: flex;
 }
 
 header>nav ul>li>a {
@@ -174,7 +178,7 @@ h2 {
 }
 
 .image {
-    height: 200px;
+    height: 250px;
     overflow: hidden;
 }
 
@@ -200,7 +204,7 @@ h2 {
 }
 
 .team {
-    margin-top: 5%;
+    margin: 10% 0;
 }
 
 .team p {
@@ -229,27 +233,29 @@ h2 {
 }
 
 .ipad img {
-    height: 400px;
-    width: 270px;
-    margin-top: 10%;
+    height: 420px;
+    width: 290px;
     border-radius: 20px;
+    margin: 5% 0;
 }
 
 .numbers {
     text-align: center;
     font-weight: bold;
+    padding: 70px 0;
 }
 
 .numbers p {
     color: #7DDFEF;
     font-size: 23px;
+    margin: 0;
 }
 
 .numbers h1 {
     text-align: center;
     font-size: 80px;
     font-weight: bold;
-    margin: 20px auto;
+    margin: 0 auto;
     font-family: 'Passion One', cursive;
     color: #313332;
 }
@@ -281,7 +287,7 @@ footer {
 footer p {
     color: white;
     text-align: center;
-    margin: 10px;
+    margin: 5px;
 }
 
 .person,
@@ -334,8 +340,8 @@ footer p {
 }
 
 .social {
-    color: white;
-    background: #00C7E6;
+    color: black;
+    background: white;
     width: 50px;
     height: 50px;
     font-size: 35px;
@@ -346,10 +352,33 @@ footer p {
     margin: 5px 5px;
 }
 
+.social:nth-of-type(1) {
+    color: #D32223;
+}
+
+.social:nth-of-type(2) {
+    color: #DC4A38;
+}
+
+.social:nth-of-type(3) {
+    color: #1877F2;
+}
+
+.social:nth-of-type(4) {
+    color: #FE5814;
+}
+
+.social:nth-of-type(5) {
+    color: #1DA1F2;
+}
+
+.social:nth-of-type(6) {
+    color: #C50090;
+}
+
 .social:hover {
     background: yellow;
     border-radius: 50%;
-    color: black;
 }
 
 .test {
@@ -479,18 +508,19 @@ footer p {
     header nav ul {
         float: none;
         text-align: center;
+        flex-direction: column;
     }
 
     header nav img {
         display: block;
         margin: 0 auto;
-        padding-top: 5%;
+        padding: 10% 0 5%;
     }
 
     header nav li {
         display: block;
         font-size: 30px;
-        padding: 15px;
+        padding: 20px;
     }
 
     header>nav ul>li>a:hover {
@@ -500,14 +530,17 @@ footer p {
 
     .hero {
         width: 100vw;
-        height: 50vh;
+        height: 95vh;
+        background-position: top;
+        margin-bottom: 70px;
     }
 
     .slogan {
-        padding: 10px 40px 10px 40px;
+        margin-top: 100px;
+        padding: 40px;
         background-color: rgba(27, 24, 22, 0.6);
-        font-size: 19px;
-        height: 70%;
+        font-size: 20px;
+        height: 55%;
     }
 
     .side {
@@ -540,9 +573,15 @@ footer p {
     }
 
     .ipad img {
-        width: 79%;
-        height: 100%;
-        padding-left: 20%;
+        height: 70%;
+        width: 77%;
+        border-radius: 25px;
+        display: block;
+        margin: 15% auto 5%;
+    }
+
+    .ipad h2 {
+        font-size: 45px;
     }
 
     .layer {
@@ -573,13 +612,29 @@ footer p {
         height: 60px;
         font-size: 40px;
         margin: 15px;
-        background: yellow;
-        color: black;
+        background: transparent;
+        color: white;
         border-radius: 50%;
+        transition: 0;
+
+        &:active {
+            background: transparent;
+            color: white;
+        }
+
+        &:hover {
+            color: white;
+            background: transparent;
+        }
+    }
+
+    .people {
+        margin: 10% auto;
     }
 
     .media {
         text-align: center;
+        display: block;
     }
 }
 
