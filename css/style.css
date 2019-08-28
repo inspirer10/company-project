@@ -13,7 +13,16 @@ body {
 
 header {
   background: #313234;
-  height: 50px;
+}
+
+nav {
+  height: 10vh;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-align: center;
+      align-items: center;
 }
 
 .container {
@@ -51,7 +60,9 @@ header > nav li {
 }
 
 header > nav img {
-  padding: 10px 0;
+  margin-bottom: 10px;
+  margin-left: 10%;
+  height: 100px;
 }
 
 .hero {
@@ -161,17 +172,15 @@ h2 {
   width: 100%;
   text-align: center;
   height: 100%;
-  display: none;
   background-color: rgba(0, 0, 0, 0.5);
   color: white;
 }
 
 .layer i {
-  font-size: 25px;
+  font-size: 30px;
   cursor: pointer;
   position: absolute;
   top: 50%;
-  transform: translateY(-50%);
 }
 
 [class*="col-"] {
@@ -196,11 +205,11 @@ h2 {
 }
 
 .image:hover .layer {
-  display: block;
+  display: none;
 }
 
 .image .fa-search {
-  right: 58%;
+  right: 44%;
 }
 
 .image .fa-camera-retro {
@@ -346,16 +355,15 @@ footer p {
 }
 
 .social {
-  color: black;
   background: white;
-  width: 50px;
-  height: 50px;
-  font-size: 35px;
+  width: 45px;
+  height: 45px;
+  font-size: 33px;
   text-align: center;
-  padding-top: 8px;
+  padding-top: 6px;
   cursor: pointer;
   transition: .3s;
-  margin: 5px 5px;
+  margin: 5px;
 }
 
 .social:nth-of-type(1) {
@@ -498,6 +506,10 @@ footer p {
   header {
     height: auto;
   }
+  nav {
+    display: block;
+    height: auto;
+  }
   header nav ul {
     float: none;
     text-align: center;
@@ -507,7 +519,7 @@ footer p {
   header nav img {
     display: block;
     margin: 0 auto;
-    padding: 10% 0 5%;
+    margin-bottom: 10%;
   }
   header nav li {
     display: block;
@@ -566,14 +578,17 @@ footer p {
   }
   .layer {
     color: yellow;
-    display: contents;
   }
   .layer i {
     font-size: 40px;
     padding: 5%;
+    top: 43%;
   }
   .image {
     height: 250px;
+  }
+  .image .fa-search {
+    right: 38%;
   }
   .image:first-child {
     margin-top: 0%;
@@ -582,12 +597,11 @@ footer p {
     background: grey;
   }
   .social {
-    width: 60px;
-    height: 60px;
-    font-size: 40px;
+    width: 50px;
+    height: 50px;
+    font-size: 45px;
     margin: 15px;
     background: transparent;
-    color: white;
     border-radius: 50%;
     transition: 0;
   }
